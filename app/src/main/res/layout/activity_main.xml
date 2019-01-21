@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/gradient1"
+                android:id="@+id/relativeLayout">
+
+    <TextView
+            android:id="@+id/txtSpeechInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="12dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="normal"/>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+    >
+
+        <ImageButton
+                android:id="@+id/btnSpeak"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_mic2"/>
+    </LinearLayout>
+    <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:stretchColumns="*"
+            android:layout_marginStart="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="103dp"
+            android:id="@+id/dataTable" android:layout_alignParentTop="true">
+
+    </TableLayout>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentBottom="true" android:id="@+id/testView" android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp" android:layout_toEndOf="@+id/btnInfo"
+            android:layout_toRightOf="@+id/btnInfo"/>
+    <TextView
+            android:layout_width="291dp"
+            android:layout_height="324dp" android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" android:id="@+id/informationView" android:layout_marginTop="56dp"
+            android:background="@drawable/information_text" android:visibility="invisible"/>
+    <ImageButton
+            android:id="@+id/btnInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/info"
+            android:layout_marginLeft="7dp" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"/>
+
+</RelativeLayout>
